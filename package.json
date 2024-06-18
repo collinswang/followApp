@@ -1,0 +1,33 @@
+{
+  "name": "acer",
+  "version": "1.0.0",
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-native-community/react-native-permissions": "github:@react-native-community/react-native-permissions",
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/stack": "^6.3.29",
+    "axios": "^1.7.2",
+    "expo": "~51.0.14",
+    "expo-barcode-scanner": "~13.0.1",
+    "expo-camera": "~15.0.11",
+    "expo-permissions": "^14.4.0",
+    "react": "18.2.0",
+    "react-native": "0.74.2",
+    "react-native-camera": "^4.2.1",
+    "react-native-gesture-handler": "^2.16.2",
+    "react-native-linear-gradient": "^2.8.3",
+    "react-native-permissions": "^4.1.5",
+    "react-native-qrcode-scanner": "^1.5.5",
+    "react-navigation": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}

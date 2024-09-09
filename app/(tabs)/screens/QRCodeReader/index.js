@@ -352,3 +352,4 @@ const QRCodeReader = ({ route, navigation }) => {
 };
 
 export default QRCodeReader;
+ 

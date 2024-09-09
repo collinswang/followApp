@@ -14,6 +14,7 @@ import axios from "axios";
 axios.defaults.withCredentials = true;
 
 const Home = ({ route, navigation }) => {
+  console.log('================', route);
   const { email, password } = route.params;
   const [projectname, setProjectname] = useState("");
   const [skipFlag, setSkipFlag] = useState(false);
@@ -30,7 +31,7 @@ const Home = ({ route, navigation }) => {
 
   const handleSkip = () => {
     if (!projectname) setProjectname(" ");
-    navigation.navigate("QRCodeReader", { projectname, email, password });
+    navigation.navigate("NfcRader", { projectname, email, password });
   };
 
   return (
@@ -55,13 +56,13 @@ const Home = ({ route, navigation }) => {
           {skipFlag ? (
             <TouchableOpacity onPress={handleProjectName} disabled={loading}>
               <Text style={styles.login_text}>
-                {loading ? "Loading..." : "S U B M I T"}
+                {loading ? "Loading..." : "QRCODE"}
               </Text>
             </TouchableOpacity>
           ) : (
             <TouchableOpacity onPress={handleSkip} disabled={loading}>
               <Text style={styles.login_text}>
-                {loading ? "Loading..." : "S K I P"}
+                {loading ? "Loading..." : "NFC"}
               </Text>
             </TouchableOpacity>
           )}
